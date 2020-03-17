@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MessiaenModes": {
+      "commandName": "Project",
+      "commandLineArgs": "-maxchromatic:4"
+    }
+  }
+}
