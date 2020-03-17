@@ -109,11 +109,7 @@ namespace MessiaenModes
         {
             StringBuilder intervalString = new StringBuilder(26);
             for (int i = 0; i < intervalCount; i++)
-            {
-                for(int j = 0; j < intervalCount; j++)
-                    intervalString.Append((j != 0 ? " - " : "") + rotations[i,j]);
-                intervalString.AppendLine();
-            }
+                intervalString.Append((i != 0 ? " - " : "") + intervals[i]);
             return intervalString.ToString();
         }
 

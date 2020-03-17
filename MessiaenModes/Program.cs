@@ -11,6 +11,8 @@ namespace MessiaenModes
             int maxChromatic = 13;
             int minNotes = 0;
             int maxNotes = 13;
+            string scaleRoot = "C";
+            bool sharps = false;
             foreach (string arg in args)
             {
                 if (arg.Equals("-showall", StringComparison.OrdinalIgnoreCase))
@@ -21,6 +23,12 @@ namespace MessiaenModes
                     minNotes = int.Parse(arg.Substring(10));
                 else if (arg.StartsWith("-maxnotes:", StringComparison.OrdinalIgnoreCase))
                     maxNotes = int.Parse(arg.Substring(10));
+                else if (arg.StartsWith("-maxnotes:", StringComparison.OrdinalIgnoreCase))
+                    maxNotes = int.Parse(arg.Substring(10));
+                else if (arg.StartsWith("-scaleroot:", StringComparison.OrdinalIgnoreCase))
+                    scaleRoot = arg.Substring(11);
+                else if (arg.StartsWith("-sharps:", StringComparison.OrdinalIgnoreCase))
+                    sharps = bool.Parse(arg.Substring(8));
             }
 
             // create the finder and all potential scales
@@ -38,7 +46,7 @@ namespace MessiaenModes
                 if (!showAll && !scale.IsMessiaen)
                     continue;
 
-                Console.WriteLine(scale.GetScaleString("C", false));
+                Console.WriteLine(scale.GetScaleString(scaleRoot, sharps));
                 Console.WriteLine(scale.GetIntervalString());
                 Console.WriteLine();
             }
