@@ -19,8 +19,6 @@ namespace MessiaenModes
                     showAll = true;
                 else if (arg.StartsWith("-maxchromatic:", StringComparison.OrdinalIgnoreCase))
                     maxChromatic = int.Parse(arg.Substring(14));
-                else if (arg.StartsWith("-minnotes:", StringComparison.OrdinalIgnoreCase))
-                    minNotes = int.Parse(arg.Substring(10));
                 else if (arg.StartsWith("-maxnotes:", StringComparison.OrdinalIgnoreCase))
                     maxNotes = int.Parse(arg.Substring(10));
                 else if (arg.StartsWith("-minnotes:", StringComparison.OrdinalIgnoreCase))
@@ -34,9 +32,9 @@ namespace MessiaenModes
             // create the finder and all potential scales
             ScaleFinder finder = new ScaleFinder()
             {
-                maxChromatic = maxChromatic,
-                minNotes = minNotes,
-                maxNotes = maxNotes
+                MaxChromatic = maxChromatic,
+                MinNotes = minNotes,
+                MaxNotes = maxNotes
             };
             finder.CreateScales();
 
@@ -47,7 +45,8 @@ namespace MessiaenModes
                     continue;
 
                 Console.WriteLine(scale.GetScaleString(scaleRoot, sharps));
-                Console.WriteLine(scale.GetIntervalString());
+                Console.WriteLine(scale.GetIntervalString(true));
+                Console.WriteLine(scale.GetIntervalString(false));
                 Console.WriteLine();
             }
 

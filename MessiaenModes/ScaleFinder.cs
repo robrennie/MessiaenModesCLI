@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace MessiaenModes
 {
@@ -9,9 +7,9 @@ namespace MessiaenModes
         public List<Scale> Scales { get; set; } = new List<Scale>();
         public int ScaleCount { get; set; } = 0;
         public int MessiaenCount { get; set; } = 0;
-        public int maxChromatic { get; set; } = 12;
-        public int minNotes { get; set; } = 0;
-        public int maxNotes { get; set; } = 0;
+        public int MaxChromatic { get; set; } = 12;
+        public int MinNotes { get; set; } = 0;
+        public int MaxNotes { get; set; } = 0;
 
         public void CreateScales()
         {
@@ -62,7 +60,7 @@ namespace MessiaenModes
 
         protected bool ValidateMinMax(Scale extendedScale)
         {
-            if ((extendedScale.NoteCount - 1) > maxNotes || (extendedScale.NoteCount - 1) < minNotes || extendedScale.ChromaticCount > maxChromatic)
+            if ((extendedScale.NoteCount - 1) > MaxNotes || (extendedScale.NoteCount - 1) < MinNotes || extendedScale.ChromaticCount > MaxChromatic)
                 return false;
             return true;
         }

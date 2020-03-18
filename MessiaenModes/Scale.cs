@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
 namespace MessiaenModes
 {
@@ -105,12 +103,43 @@ namespace MessiaenModes
             return scaleString.ToString();
         }
 
-        public string GetIntervalString()
+        public string GetIntervalString(bool intervalNames)
         {
             StringBuilder intervalString = new StringBuilder(26);
+            intervalString.Append("r");
             for (int i = 0; i < intervalCount; i++)
-                intervalString.Append((i != 0 ? " - " : "") + intervals[i]);
+                intervalString.Append(" - " + (intervalNames ? IntervalName(intervals[i]) : intervals[i].ToString()));
             return intervalString.ToString();
+        }
+
+        protected string IntervalName(int interval)
+        {
+            switch(interval)
+            {
+                case 1:
+                    return "h";
+                case 2:
+                    return "w";
+                case 3:
+                    return "m3";
+                case 4:
+                    return "M3";
+                case 5:
+                    return "4";
+                case 6:
+                    return "4+";
+                case 7:
+                    return "5";
+                case 8:
+                    return "5+";
+                case 9:
+                    return "6";
+                case 10:
+                    return "b7";
+                case 11:
+                    return "M7";
+            }
+            return "U";
         }
 
         protected bool TestForMessiaen()
