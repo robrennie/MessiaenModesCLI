@@ -2,7 +2,7 @@
   "profiles": {
     "MessiaenModes": {
       "commandName": "Project",
-      "commandLineArgs": "-maxchromatic:4 -scaleroot:Bb -sharps:false"
+      "commandLineArgs": "-maxchromatic:4 -scaleroot:Db -sharps:false -minnotes:5 -maxnotes:9"
     }
   }
 }

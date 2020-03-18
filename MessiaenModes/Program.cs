@@ -23,8 +23,8 @@ namespace MessiaenModes
                     minNotes = int.Parse(arg.Substring(10));
                 else if (arg.StartsWith("-maxnotes:", StringComparison.OrdinalIgnoreCase))
                     maxNotes = int.Parse(arg.Substring(10));
-                else if (arg.StartsWith("-maxnotes:", StringComparison.OrdinalIgnoreCase))
-                    maxNotes = int.Parse(arg.Substring(10));
+                else if (arg.StartsWith("-minnotes:", StringComparison.OrdinalIgnoreCase))
+                    minNotes = int.Parse(arg.Substring(10));
                 else if (arg.StartsWith("-scaleroot:", StringComparison.OrdinalIgnoreCase))
                     scaleRoot = arg.Substring(11);
                 else if (arg.StartsWith("-sharps:", StringComparison.OrdinalIgnoreCase))

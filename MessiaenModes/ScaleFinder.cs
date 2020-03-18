@@ -62,7 +62,7 @@ namespace MessiaenModes
 
         protected bool ValidateMinMax(Scale extendedScale)
         {
-            if (extendedScale.NoteCount > maxNotes || extendedScale.NoteCount < minNotes || extendedScale.ChromaticCount > maxChromatic)
+            if ((extendedScale.NoteCount - 1) > maxNotes || (extendedScale.NoteCount - 1) < minNotes || extendedScale.ChromaticCount > maxChromatic)
                 return false;
             return true;
         }

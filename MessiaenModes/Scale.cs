@@ -12,8 +12,8 @@ namespace MessiaenModes
         public int NoteCount { get; set; } = 0;
 
         protected byte[] Notes { get; set; } = new byte[13];
-        protected string[] NoteNames1 = new string[] { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B", "C" };
-        protected string[] NoteNames2 = new string[] { "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B", "C" };
+        protected string[] NoteNames1 = new string[] { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
+        protected string[] NoteNames2 = new string[] { "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B" };
         protected int[] intervals = new int[13];
         protected int intervalCount = 0;
         protected int[,] rotations;
@@ -98,8 +98,8 @@ namespace MessiaenModes
                     break;
 
                 int noteNameIndex = (Notes[i] + rootIndex) - 1;
-                if (noteNameIndex >= 13)
-                    noteNameIndex -= 13;
+                if (noteNameIndex >= 12)
+                    noteNameIndex -= 12;
                 scaleString.Append( ( i > 0 ? " - " : "" ) + NoteNames[noteNameIndex]);
             }
             return scaleString.ToString();
