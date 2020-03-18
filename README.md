@@ -9,58 +9,76 @@ Here's a sample run with the following command line parameters:
 Output:
 ```
 Db - D - Eb - F - G - Ab - A - B - Db
-1 - 1 - 2 - 2 - 1 - 1 - 2 - 2
+r - h - h - w - w - h - h - w - w
+r - 1 - 1 - 2 - 2 - 1 - 1 - 2 - 2
 
 Db - D - Eb - G - Ab - A - Db
-1 - 1 - 4 - 1 - 1 - 4
+r - h - h - M3 - h - h - M3
+r - 1 - 1 - 4 - 1 - 1 - 4
 
 Db - D - E - F - G - Ab - Bb - B - Db
-1 - 2 - 1 - 2 - 1 - 2 - 1 - 2
+r - h - w - h - w - h - w - h - w
+r - 1 - 2 - 1 - 2 - 1 - 2 - 1 - 2
 
 Db - D - E - Gb - G - Ab - Bb - C - Db
-1 - 2 - 2 - 1 - 1 - 2 - 2 - 1
+r - h - w - w - h - h - w - w - h
+r - 1 - 2 - 2 - 1 - 1 - 2 - 2 - 1
 
 Db - D - E - G - Ab - Bb - Db
-1 - 2 - 3 - 1 - 2 - 3
+r - h - w - m3 - h - w - m3
+r - 1 - 2 - 3 - 1 - 2 - 3
 
 Db - D - F - Gb - A - Bb - Db
-1 - 3 - 1 - 3 - 1 - 3
+r - h - m3 - h - m3 - h - m3
+r - 1 - 3 - 1 - 3 - 1 - 3
 
 Db - D - F - G - Ab - B - Db
-1 - 3 - 2 - 1 - 3 - 2
+r - h - m3 - w - h - m3 - w
+r - 1 - 3 - 2 - 1 - 3 - 2
 
 Db - D - Gb - G - Ab - C - Db
-1 - 4 - 1 - 1 - 4 - 1
+r - h - M3 - h - h - M3 - h
+r - 1 - 4 - 1 - 1 - 4 - 1
 
 Db - Eb - E - F - G - A - Bb - B - Db
-2 - 1 - 1 - 2 - 2 - 1 - 1 - 2
+r - w - h - h - w - w - h - h - w
+r - 2 - 1 - 1 - 2 - 2 - 1 - 1 - 2
 
 Db - Eb - E - Gb - G - A - Bb - C - Db
-2 - 1 - 2 - 1 - 2 - 1 - 2 - 1
+r - w - h - w - h - w - h - w - h
+r - 2 - 1 - 2 - 1 - 2 - 1 - 2 - 1
 
 Db - Eb - E - G - A - Bb - Db
-2 - 1 - 3 - 2 - 1 - 3
+r - w - h - m3 - w - h - m3
+r - 2 - 1 - 3 - 2 - 1 - 3
 
 Db - Eb - F - Gb - G - A - B - C - Db
-2 - 2 - 1 - 1 - 2 - 2 - 1 - 1
+r - w - w - h - h - w - w - h - h
+r - 2 - 2 - 1 - 1 - 2 - 2 - 1 - 1
 
 Db - Eb - F - G - A - B - Db
-2 - 2 - 2 - 2 - 2 - 2
+r - w - w - w - w - w - w
+r - 2 - 2 - 2 - 2 - 2 - 2
 
 Db - Eb - Gb - G - A - C - Db
-2 - 3 - 1 - 2 - 3 - 1
+r - w - m3 - h - w - m3 - h
+r - 2 - 3 - 1 - 2 - 3 - 1
 
 Db - E - F - G - Bb - B - Db
-3 - 1 - 2 - 3 - 1 - 2
+r - m3 - h - w - m3 - h - w
+r - 3 - 1 - 2 - 3 - 1 - 2
 
 Db - E - F - Ab - A - C - Db
-3 - 1 - 3 - 1 - 3 - 1
+r - m3 - h - m3 - h - m3 - h
+r - 3 - 1 - 3 - 1 - 3 - 1
 
 Db - E - Gb - G - Bb - C - Db
-3 - 2 - 1 - 3 - 2 - 1
+r - m3 - w - h - m3 - w - h
+r - 3 - 2 - 1 - 3 - 2 - 1
 
 Db - F - Gb - G - B - C - Db
-4 - 1 - 1 - 4 - 1 - 1
+r - M3 - h - h - M3 - h - h
+r - 4 - 1 - 1 - 4 - 1 - 1
 
 Total Scales Searched:1202
 Total Messiaen Scales Found:18
