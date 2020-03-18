@@ -4,85 +4,64 @@ For more information about these, please refer to https://en.wikipedia.org/wiki/
 
 Here's a sample run with the following command line parameters:
 
-* -maxchromatic:4 -scaleroot:Bb -sharps:false
+* -maxchromatic:4 -scaleroot:Db -sharps:false -minnotes:5 -maxnotes:9
 
 Output:
 ```
-Bb - B - C - Db - Eb - E - F - G - A
+Db - D - Eb - F - G - Ab - A - B - Db
 1 - 1 - 2 - 2 - 1 - 1 - 2 - 2
 
-Bb - B - C - Eb - E - F - A
+Db - D - Eb - G - Ab - A - Db
 1 - 1 - 4 - 1 - 1 - 4
 
-Bb - B - C - Db - Eb - E - Gb - G - A
+Db - D - E - F - G - Ab - Bb - B - Db
 1 - 2 - 1 - 2 - 1 - 2 - 1 - 2
 
-Bb - B - C - D - Eb - E - Gb - Ab - A
+Db - D - E - Gb - G - Ab - Bb - C - Db
 1 - 2 - 2 - 1 - 1 - 2 - 2 - 1
 
-Bb - B - C - Eb - E - Gb - A
+Db - D - E - G - Ab - Bb - Db
 1 - 2 - 3 - 1 - 2 - 3
 
-Bb - B - Db - D - F - Gb - A
+Db - D - F - Gb - A - Bb - Db
 1 - 3 - 1 - 3 - 1 - 3
 
-Bb - B - Db - Eb - E - G - A
+Db - D - F - G - Ab - B - Db
 1 - 3 - 2 - 1 - 3 - 2
 
-Bb - B - D - Eb - E - Ab - A
+Db - D - Gb - G - Ab - C - Db
 1 - 4 - 1 - 1 - 4 - 1
 
-Bb - B - Eb - E - A
-1 - 5 - 1 - 5
-
-Bb - C - C - Db - Eb - F - Gb - G - A
+Db - Eb - E - F - G - A - Bb - B - Db
 2 - 1 - 1 - 2 - 2 - 1 - 1 - 2
 
-Bb - C - C - D - Eb - F - Gb - Ab - A
+Db - Eb - E - Gb - G - A - Bb - C - Db
 2 - 1 - 2 - 1 - 2 - 1 - 2 - 1
 
-Bb - C - C - Eb - F - Gb - A
+Db - Eb - E - G - A - Bb - Db
 2 - 1 - 3 - 2 - 1 - 3
 
-Bb - C - Db - D - Eb - F - G - Ab - A
+Db - Eb - F - Gb - G - A - B - C - Db
 2 - 2 - 1 - 1 - 2 - 2 - 1 - 1
 
-Bb - C - Db - Eb - F - G - A
+Db - Eb - F - G - A - B - Db
 2 - 2 - 2 - 2 - 2 - 2
 
-Bb - C - D - Eb - F - Ab - A
+Db - Eb - Gb - G - A - C - Db
 2 - 3 - 1 - 2 - 3 - 1
 
-Bb - C - Eb - F - A
-2 - 4 - 2 - 4
-
-Bb - C - Db - Eb - Gb - G - A
+Db - E - F - G - Bb - B - Db
 3 - 1 - 2 - 3 - 1 - 2
 
-Bb - C - Db - E - F - Ab - A
+Db - E - F - Ab - A - C - Db
 3 - 1 - 3 - 1 - 3 - 1
 
-Bb - C - D - Eb - Gb - Ab - A
+Db - E - Gb - G - Bb - C - Db
 3 - 2 - 1 - 3 - 2 - 1
 
-Bb - C - Eb - Gb - A
-3 - 3 - 3 - 3
-
-Bb - Db - D - Eb - G - Ab - A
+Db - F - Gb - G - B - C - Db
 4 - 1 - 1 - 4 - 1 - 1
 
-Bb - Db - Eb - G - A
-4 - 2 - 4 - 2
-
-Bb - Db - F - A
-4 - 4 - 4
-
-Bb - D - Eb - Ab - A
-5 - 1 - 5 - 1
-
-Bb - Eb - A
-6 - 6
-
-Total Scales Searched:1353
-Total Messiaen Scales Found:25
+Total Scales Searched:1202
+Total Messiaen Scales Found:18
 ```
